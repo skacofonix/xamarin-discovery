@@ -14,6 +14,7 @@ namespace HelloDroid
         private EditText _firstnameTextView;
         private EditText _lastnameTextView;
         private TextView _fullnameTextView;
+        private string _fullname = string.Empty;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,7 +37,8 @@ namespace HelloDroid
 
         private void RefreshFullname()
         {
-            _fullnameTextView.Text = string.Join(" ", _firstnameTextView.Text, _lastnameTextView.Text);
+            _fullname = string.Join(" ", _firstnameTextView.Text, _lastnameTextView.Text);
+            _fullnameTextView.Text = _fullname;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -56,11 +58,11 @@ namespace HelloDroid
             return base.OnOptionsItemSelected(item);
         }
 
-        private static void FabOnClick(object sender, EventArgs eventArgs)
+        private void FabOnClick(object sender, EventArgs eventArgs)
         {
-            var view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
+            var view = (View)sender;
+            Snackbar.Make(view, $"Envoyer un message à {_fullname}", Snackbar.LengthLong)
                     .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-	}
+    }
 }
