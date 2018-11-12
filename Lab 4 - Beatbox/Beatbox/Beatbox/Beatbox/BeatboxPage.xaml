@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Beatbox"
+             xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Beatbox.BeatboxPage"
+             Title="Beatbox!"
+             x:Name="MainContainer">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="baseline_settings_white_24.png"
+                     Text="Settings"
+                     Clicked="MenuItem_OnClicked" />
+    </ContentPage.ToolbarItems>
+
+    <controls:FlowListView FlowColumnCount="4"
+                           SeparatorVisibility="None"
+                           HasUnevenRows="false"
+                           RowHeight="100"
+                           FlowItemsSource="{Binding Sounds}">
+
+        <controls:FlowListView.FlowColumnTemplate>
+            <DataTemplate>
+                <local:PadView StartCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StartPlayCommand}"
+                               StopCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StopPlayCommand}" />
+            </DataTemplate>
+        </controls:FlowListView.FlowColumnTemplate>
+
+    </controls:FlowListView>
+
+</ContentPage>

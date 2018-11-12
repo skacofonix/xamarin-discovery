@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:beatbox="clr-namespace:Beatbox;assembly=Beatbox"
+             x:Class="Beatbox.PadView">
+
+    <beatbox:CustomButton HorizontalOptions="Fill"
+                          VerticalOptions="Fill"
+                          Pressed="OnPressed"
+                          Released="OnReleased"
+                          Text="{Binding Status}"
+                          BackgroundColor="LightGray">
+        <beatbox:CustomButton.Triggers>
+            <DataTrigger Binding="{Binding Status}"
+                         Value="{x:Static beatbox:SoundStatus.Recording}"
+                         TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="Red" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}"
+                         Value="{x:Static beatbox:SoundStatus.Playing}"
+                         TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="Green" />
+            </DataTrigger>
+        </beatbox:CustomButton.Triggers>
+    </beatbox:CustomButton>
+
+</ContentView>
