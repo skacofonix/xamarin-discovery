@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Acr.UserDialogs;
+using Beatbox.Services;
 using DLToolkit.Forms.Controls;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;

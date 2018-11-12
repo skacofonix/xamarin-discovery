@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Diagnostics;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-namespace Beatbox
+namespace Beatbox.Controls
 {
     public class CustomButton : Button
     {

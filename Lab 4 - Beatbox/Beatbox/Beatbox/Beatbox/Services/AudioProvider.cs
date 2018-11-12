@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Beatbox
+namespace Beatbox.Services
 {
     public class AudioProvider : IAudioProvider
     {

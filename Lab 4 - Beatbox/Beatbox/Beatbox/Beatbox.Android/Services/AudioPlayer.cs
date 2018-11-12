@@ -1,13 +1,14 @@
 ﻿using System;
 using System.IO;
 using Android.Media;
-using Beatbox.Droid;
+using Beatbox.Droid.Services;
+using Beatbox.Services;
 using Java.Lang;
 using Xamarin.Forms;
 using Exception = System.Exception;
 
 [assembly: Dependency(typeof(AudioPlayer))]
-namespace Beatbox.Droid
+namespace Beatbox.Droid.Services
 {
     public class AudioPlayer : IDisposable, IAudioPlayer
     {

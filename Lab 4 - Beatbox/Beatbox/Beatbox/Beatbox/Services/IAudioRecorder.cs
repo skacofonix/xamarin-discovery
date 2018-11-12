@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Beatbox
+namespace Beatbox.Services
 {
     public interface IAudioRecorder
     {

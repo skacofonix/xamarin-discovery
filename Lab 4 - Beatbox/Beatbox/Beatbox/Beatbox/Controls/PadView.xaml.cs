@@ -2,7 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Beatbox
+namespace Beatbox.Controls
 {
     public partial class PadView
     {

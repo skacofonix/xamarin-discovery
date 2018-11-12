@@ -2,11 +2,12 @@
 using System.IO;
 using System.Threading.Tasks;
 using Android.Media;
-using Beatbox.Droid;
+using Beatbox.Droid.Services;
+using Beatbox.Services;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(AudioRecorder))]
-namespace Beatbox.Droid
+namespace Beatbox.Droid.Services
 {
     public class AudioRecorder : IDisposable, IAudioRecorder
     {

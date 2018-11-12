@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 
-namespace Beatbox
+namespace Beatbox.Common
 {
     /// <summary> 
     /// Represents a dynamic data collection that provides notifications when items get added, removed, or when the whole list is refreshed. 

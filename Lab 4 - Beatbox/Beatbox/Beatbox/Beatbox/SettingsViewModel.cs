@@ -1,4 +1,5 @@
 ﻿using System.Windows.Input;
+using Beatbox.Common;
 using Xamarin.Forms;
 
 namespace Beatbox

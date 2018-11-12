@@ -67,10 +67,11 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioPlayer.cs" />
-    <Compile Include="AudioRecorder.cs" />
+    <Compile Include="Services\AudioPlayer.cs" />
+    <Compile Include="Services\AudioPlayerProvider.cs" />
+    <Compile Include="Services\AudioRecorder.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="CustomButtonRenderer.cs" />
+    <Compile Include="CustomRenderers\CustomButtonRenderer.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

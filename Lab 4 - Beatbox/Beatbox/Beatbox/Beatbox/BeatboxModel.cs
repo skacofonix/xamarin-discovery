@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Beatbox.Services;
 
 namespace Beatbox
 {
@@ -12,8 +13,7 @@ namespace Beatbox
 
             for (var i = 0; i < nbPad; i++)
             {
-                var player = audioProvider.GetPlayer();
-                var hash = player.GetHashCode();
+                var player = audioProvider.CreatePlayer();
                 Sounds.Add(new SoundModel(player, recorder));
             }
         }

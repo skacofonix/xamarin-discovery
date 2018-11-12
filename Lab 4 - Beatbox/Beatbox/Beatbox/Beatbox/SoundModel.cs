@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Beatbox.Services;
 
 namespace Beatbox
 {
@@ -91,6 +92,7 @@ namespace Beatbox
             lock (_locker)
             {
                 if (Status.HasFlag(SoundStatus.Busy)) return;
+                Status = SoundStatus.Playing;
             }
 
             if (_fullpath == null) return;

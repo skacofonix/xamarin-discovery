@@ -1,4 +1,4 @@
-﻿namespace Beatbox
+﻿namespace Beatbox.Services
 {
     public interface IAudioProvider
     {

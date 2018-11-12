@@ -1,14 +1,14 @@
 ﻿using Android.Content;
 using Android.Views;
-using Beatbox;
-using Beatbox.Droid;
+using Beatbox.Controls;
+using Beatbox.Droid.CustomRenderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Button = Android.Widget.Button;
 using ButtonRenderer = Xamarin.Forms.Platform.Android.AppCompat.ButtonRenderer;
 
 [assembly: ExportRenderer(typeof(CustomButton), typeof(CustomButtonRenderer))]
-namespace Beatbox.Droid
+namespace Beatbox.Droid.CustomRenderers
 {
     public class CustomButtonRenderer : ButtonRenderer
     {

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Beatbox"
              xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             xmlns:controls1="clr-namespace:Beatbox.Controls;assembly=Beatbox"
              x:Class="Beatbox.BeatboxPage"
              Title="Beatbox!"
              x:Name="MainContainer">
@@ -21,8 +22,8 @@
 
         <controls:FlowListView.FlowColumnTemplate>
             <DataTemplate>
-                <local:PadView StartCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StartPlayCommand}"
-                               StopCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StopPlayCommand}" />
+                <controls1:PadView StartCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StartPlayCommand}"
+                                   StopCommand="{Binding Source={x:Reference MainContainer}, Path=BindingContext.StopPlayCommand}" />
             </DataTemplate>
         </controls:FlowListView.FlowColumnTemplate>
 

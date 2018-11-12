@@ -2,7 +2,7 @@
 using System.Globalization;
 using Xamarin.Forms;
 
-namespace Beatbox
+namespace Beatbox.Converters
 {
     public class DumbConverter : IValueConverter
     {

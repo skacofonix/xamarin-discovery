@@ -2,11 +2,14 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:beatbox="clr-namespace:Beatbox;assembly=Beatbox"
+             xmlns:converters="clr-namespace:Beatbox.Converters;assembly=Beatbox"
              x:Class="Beatbox.App">
 
     <Application.Resources>
         <ResourceDictionary>
-            <beatbox:DumbConverter x:Key="DumbConverter" />
+            <converters:DumbConverter x:Key="DumbConverter" />
+            <converters:SoundStatusColorConverter x:Key="SoundStatusColorConverter" />
+            <converters:SoundStatusTextConverter x:Key="SoundStatusTextConverter" />
         </ResourceDictionary>
     </Application.Resources>
 
