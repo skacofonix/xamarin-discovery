@@ -6,3 +6,5 @@ Créer une vue en XAML
 2. Câbler les bouttons
 
 3. Un peu de couleur sur les boutons "opérations"
+
+	BackgroundColor="{x:Static local:SharedResources.OpButtonBkColor}"
