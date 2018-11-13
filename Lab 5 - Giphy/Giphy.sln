@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giphy.Android", "Giphy\Giphy.Android\Giphy.Android.csproj", "{8C3AD068-637C-41CE-B2F3-57F7C3C72FD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giphy.Android", "Giphy.Android\Giphy.Android.csproj", "{8C3AD068-637C-41CE-B2F3-57F7C3C72FD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giphy", "Giphy\Giphy\Giphy.csproj", "{30F1A060-3203-4A00-B8DE-21AA08A88FAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giphy", "Giphy\Giphy.csproj", "{30F1A060-3203-4A00-B8DE-21AA08A88FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
